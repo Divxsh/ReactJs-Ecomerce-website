@@ -7,7 +7,7 @@ const GetProduct = () => {
       .then((data) => {
         dispatch({
           type: "GET_PRODUCTS",
-          payload: data.records,
+          payload: data.records || [],
         });
       });
   };
